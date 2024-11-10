@@ -15,5 +15,6 @@
     "prepare": "husky",
     "test": "jest",
     "test:unit": "jest --config=config/jest/jest.config.mjs --selectProjects=unit"
-  }
+  },
+  "type": "module"
 }
