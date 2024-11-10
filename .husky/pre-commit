@@ -4,3 +4,4 @@ yarn test
 yarn test:unit
 yarn lint:fix
 yarn format
+npx lint-staged --concurrent false
