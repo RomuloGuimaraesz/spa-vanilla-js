@@ -4,3 +4,4 @@ yarn test
 yarn test:unit
 yarn lint-staged --concurrent false
 yarn run stylelint
+yarn docs
