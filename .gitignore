@@ -8,3 +8,6 @@ build/
 
 # Environment variables 
 .env
+
+# Tests Coverage report
+config/jest/coverage/
