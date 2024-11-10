@@ -1,0 +1,16 @@
+{
+  "name": "spa-vanilla-js",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/RomuloGuimaraesz/spa-vanilla-js.git",
+  "author": "Rômulo de Farias <romulo_fantomaz@hotmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@commitlint/cli": "^19.5.0",
+    "@commitlint/config-conventional": "^19.5.0",
+    "husky": "^9.1.6"
+  },
+  "scripts": {
+    "prepare": "husky"
+  }
+}
