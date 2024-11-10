@@ -2,3 +2,5 @@
 
 yarn test
 yarn test:unit
+yarn lint:fix
+yarn format

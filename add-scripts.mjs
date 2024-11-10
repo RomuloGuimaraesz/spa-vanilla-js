@@ -1,4 +1,3 @@
-
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
@@ -23,21 +22,25 @@ packageJson.scripts = packageJson.scripts || {};
 
 // Define the scripts to add or update
 const newScripts = {
-  "test": "jest",
-  "test:unit": "jest --config=config/jest/jest.config.mjs --selectProjects=unit",
+  test: 'jest',
+  'test:unit': 'jest --config=config/jest/jest.config.js --selectProjects=unit',
+  lint: 'eslint . --ext .js,.jsx,.ts,.tsx',
+  'lint:fix': 'eslint . --ext .js,.jsx,.ts,.tsx --fix',
+  format: 'prettier --write src/**/*.{js,jsx,ts,tsx}',
+  'format:check': 'prettier --check src/**/*.{js,jsx,ts,tsx}',
 };
 
 // Add or update the scripts
 Object.assign(packageJson.scripts, newScripts);
 
-// Add or update the type field to module
-packageJson.type = "module";
-
 // Write the updated package.json back to the file system
 try {
-  fs.writeFileSync(packageJsonPath, JSON.stringify(packageJson, null, 2) + '\n', 'utf8');
-  console.log('package.json updated successfully with scripts and type: module.');
+  fs.writeFileSync(
+    packageJsonPath,
+    JSON.stringify(packageJson, null, 2) + '\n',
+    'utf8'
+  );
 } catch (error) {
   console.error('Error writing to package.json:', error);
   process.exit(1);
-} 
+}

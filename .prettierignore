@@ -1,0 +1,7 @@
+node_modules
+dist
+coverage
+config
+eslint.config.js
+commitlint.config.mjs
+
