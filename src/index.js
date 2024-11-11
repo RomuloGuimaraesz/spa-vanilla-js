@@ -1,12 +1,13 @@
 const testText = 'Testing the configuration...';
-
+const indexH1 = document.querySelector('#app');
 /**
  * Returns a Header HTML element
  * @param {String} test - The header text.
  * @returns {String} The H1 HTML element.
  */
-function loadConfig(testText) {
-  return `<h1>${testText}</h1>`;
+function loadConfig(text) {
+  return `<h1>${text}</h1>`;
 }
 
-loadConfig(testText);
+console.log((indexH1.innerHTML = loadConfig(testText)));
+console.log();

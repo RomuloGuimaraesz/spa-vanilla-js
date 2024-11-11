@@ -1,13 +1,17 @@
 
-# Node modules 
-node_modules/ 
+# Node modules
+node_modules/
 
-# Production and build directories 
-dist/ 
-build/ 
+# Production and build directories
+dist/
+build/
 
-# Environment variables 
+# Environment variables
 .env
 
 # Tests Coverage report
 config/jest/coverage/
+
+# JSDocs files
+docs/
+

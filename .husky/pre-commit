@@ -3,5 +3,7 @@
 yarn test
 yarn test:unit
 yarn lint-staged --concurrent false
-yarn run stylelint
+yarn stylelint
+yarn lint
+yarn build
 yarn docs

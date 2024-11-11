@@ -1,0 +1,27 @@
+{
+  "jsc": {
+    "parser": {
+      "syntax": "ecmascript",
+      "jsx": false,
+      "decorators": false,
+      "dynamicImport": true
+    },
+    "target": "es2015",
+    "transform": {
+      "hidden": {
+        "jest": true
+      }
+    },
+    "minify": {
+      "compress": false,
+      "mangle": false,
+      "format": {
+        "comments": false
+      }
+    }
+  },
+  "module": {
+    "type": "commonjs"
+  },
+  "minify": true
+}
